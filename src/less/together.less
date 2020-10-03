@@ -1,0 +1,37 @@
+.together {
+    color: @accent;
+    // background: url(../img/images.jpg) center 0 repeat fixed;
+    background: url(../img/images.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+}
+
+.together__content {
+    .row-flex();
+    align-items: center;
+}
+
+.together__picture {
+    .col();
+    .size(4);
+    .size-md(12);
+    
+    
+}
+
+.together__text {
+    .col();
+    .size(8);
+    .size-md(12);
+
+    text-align: center;
+
+    h2 {
+        font-size: 28px;
+        font-weight: 60;
+    }
+
+    p {
+        margin: 10px 0;
+        font-size: 20px;
+    }
+}

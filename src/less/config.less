@@ -1,0 +1,83 @@
+// USER VARIABLES SECTION
+
+@accent: #002069; // Accent Color
+@fontsize: 16px; // Body Font Size
+@textcolor: #55606E; // Text Color
+@textcolorDark: #11202A; // Text Color
+@mainfamily: 'Open Sans', sans-serif; // Main Font Family
+
+
+
+// GENERAL DOCUMENT STYLES
+
+.reset();
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.container {
+	.wrapper();
+}
+
+::placeholder {
+	color: @textcolor;
+}
+
+::selection {
+	background-color: @accent;
+	color: #fff;
+}
+
+input,
+textarea {
+	outline: none;
+
+	&:focus:required:invalid {
+		border-color: red
+	}
+
+	&:required:valid {
+		border-color: green
+	}
+}
+// html {
+// 	scroll-behavior: smooth;
+// }
+
+body {
+	font-size: @fontsize;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: @mainfamily;
+	font-weight: normal;
+	// overflow-x: hidden;
+  	color: @textcolor;
+  	// letter-spacing: 0.01em;
+}
+
+input, button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+section {
+	padding: 50px 0;
+}
+
+.section__title {
+	margin-bottom: 50px;
+	color: @accent;
+	font-size: 28px;
+	.xs(font-size, 22px);
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+
+
